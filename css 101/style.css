@@ -1,0 +1,222 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  background-image: url(https://images.unsplash.com/photo-1504700610630-ac6aba3536d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80); /*mette un'immagine come sfondo di tutto*/
+  background-repeat: no-repeat; /*non fa ripetere l'immagine nello sfondo*/
+  background-size: cover; /*l'immagine riempie tutta la pagina*/
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgb(9, 9, 121);
+  background: -moz-linear-gradient(
+    186deg,
+    rgba(9, 9, 121, 0.7259278711484594) 35%,
+    rgba(0, 0, 0, 0.842) 100%
+  );
+  background: -webkit-linear-gradient(
+    186deg,
+    rgba(9, 9, 121, 0.7259278711484594) 35%,
+    rgba(0, 0, 0, 0.842) 100%
+  );
+  background: linear-gradient(
+    186deg,
+    rgba(9, 9, 121, 0.7259278711484594) 35%,
+    rgba(0, 0, 0, 0.842) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#090979",endColorstr="#000000",GradientType=1);
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.card {
+  width: 360px;
+  border: 2px solid rgba(0, 0, 0, 0.493); /*bordo colorato intorno all'elemento card*/
+  margin: 25px auto;
+  border-radius: 100px 100px 0px 0px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8); /*colore di sfondo della card*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card img {
+  width: 100%;
+  border-radius: 100px 100px 0px 0px;
+}
+.username {
+  font-size: 36px;
+  margin: -45px 10px 10px 10px; /*il -45px è per mettere la scritta sull'immagine*/
+  color: white;
+  text-shadow: -2px 0 #000000c0, 0 2px #000000c0, 1px 0 #000000c0,
+    0 -1px #000000c0; /*per mettere l'ombreggiatura alla scritta*/
+  font-family: "Dancing Script", cursive;
+}
+.card blockquote {
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  font-style: italic;
+  margin-left: 30px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.card blockquote cite {
+  display: block;
+  font-size: 15px;
+  font-style: italic;
+  margin-top: 5px;
+  text-align: right;
+  margin-right: 25px;
+  font-family: "Playfair Display", serif;
+}
+.card ul {
+  font-size: 18px;
+  margin-left: 25px;
+  margin-right: 25px;
+  line-height: 1.5;
+  list-style: disc;
+  text-align: center;
+  margin-top: 15px;
+}
+.card ul li {
+  display: inline-block;
+  padding: 5px;
+  margin: 10px;
+}
+.card ul li: :last-child {
+  margin-right: 0px; /*per togliere il margine all'ultimo elemento*/
+}
+.card ul li svg {
+  width: 24px;
+}
+[data-icon]:hover {
+  transform: translateY(-5px);
+}
+[data-icon^="instagram"] {
+  fill: url(#grad1);
+}
